@@ -1,0 +1,26 @@
+digraph AutomataDePila {
+	rankdir=LR shape=circle
+	Inicio [fillcolor=red shape=box style=filled]
+	S0 [shape=circle]
+	S0 [shape=circle]
+	S1 [shape=circle]
+	S2 [shape=circle]
+	S3 [shape=doublecircle]
+	Inicio -> S0
+	S0 -> S1 [label="$,$,#"]
+	S1 -> S1 [label="x,$,x"]
+	S1 -> S2 [label="y,x,$"]
+	S2 -> S2 [label="y,x,$"]
+	S2 -> S3 [label="$,#,$"]
+	"Nombre: AP2
+
+Alfabeto: x,y
+
+Simbolos Pila: x,y,#
+
+Estados: S0,S1,S2,S3
+
+Estado Inicial: S0
+
+Estado Aceptacion: S3" [shape=box]
+}

@@ -1,0 +1,27 @@
+digraph GrafoPasoAPaso {
+	rankdir=LR shape=circle
+	Inicio [fillcolor=red shape=box style=filled]
+	S0 [shape=circle]
+	S0 [shape=circle]
+	S1 [shape=circle]
+	S2 [shape=circle]
+	S3 [fillcolor=yellow shape=doublecircle style=filled]
+	Inicio -> S0
+	S0 -> S1 [label="$,$,#"]
+	S1 -> S1 [label="x,$,x"]
+	S1 -> S2 [label="y,x,$"]
+	S2 -> S2 [label="y,x,$"]
+	S2 -> S3 [label="$,#,$"]
+	Entrada [label=<<TABLE>
+                            <TR>
+                            <TD>Entrada:</TD>
+                            <TD> xxxxyyyy</TD>
+                            </TR>
+                            <TR>
+                            <TD>Pila:</TD>
+                            <TD> </TD>
+                            </TR>
+                            </TABLE>> shape=plaintext]
+	1 [label="Cadena Valida" fillcolor=green shape=plaintext]
+	Entrada -> 1
+}

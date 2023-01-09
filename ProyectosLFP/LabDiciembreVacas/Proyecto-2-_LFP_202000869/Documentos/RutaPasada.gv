@@ -1,0 +1,90 @@
+digraph RutaPasada {
+	rankdir=LR shape=circle
+	Entrada [label=<<TABLE>
+                            <TR>
+                            <TD>Iteracion</TD>
+                            <TD>Pila</TD>
+                            <TD>Entrada</TD>
+                            <TD>Transicion</TD>
+                            </TR>
+                            
+            <TR>
+            <TD>0</TD>
+            <TD> </TD>
+            <TD> </TD>
+            <TD>S0,$,$,#,S1</TD>
+            </TR>
+            
+            <TR>
+            <TD>1</TD>
+            <TD> #</TD>
+            <TD> x</TD>
+            <TD>S1,x,$,x,S1</TD>
+            </TR>
+            
+            <TR>
+            <TD>2</TD>
+            <TD> #x</TD>
+            <TD> xx</TD>
+            <TD>S1,x,$,x,S1</TD>
+            </TR>
+            
+            <TR>
+            <TD>3</TD>
+            <TD> #xx</TD>
+            <TD> xxx</TD>
+            <TD>S1,x,$,x,S1</TD>
+            </TR>
+            
+            <TR>
+            <TD>4</TD>
+            <TD> #xxx</TD>
+            <TD> xxxx</TD>
+            <TD>S1,x,$,x,S1</TD>
+            </TR>
+            
+            <TR>
+            <TD>5</TD>
+            <TD> #xxxx</TD>
+            <TD> xxxxy</TD>
+            <TD>S1,y,x,$,S2</TD>
+            </TR>
+            
+            <TR>
+            <TD>6</TD>
+            <TD> #xxx</TD>
+            <TD> xxxxyy</TD>
+            <TD>S2,y,x,$,S2</TD>
+            </TR>
+            
+            <TR>
+            <TD>7</TD>
+            <TD> #xx</TD>
+            <TD> xxxxyyy</TD>
+            <TD>S2,y,x,$,S2</TD>
+            </TR>
+            
+            <TR>
+            <TD>8</TD>
+            <TD> #x</TD>
+            <TD> xxxxyyyy</TD>
+            <TD>S2,y,x,$,S2</TD>
+            </TR>
+            
+            <TR>
+            <TD>9</TD>
+            <TD> #</TD>
+            <TD> xxxxyyyy</TD>
+            <TD>S2,$,#,$,S3</TD>
+            </TR>
+            
+            <TR>
+            <TD>10</TD>
+            <TD> </TD>
+            <TD> xxxxyyyy</TD>
+            <TD></TD>
+            </TR>
+            
+                            
+                            </TABLE>> shape=plaintext]
+}

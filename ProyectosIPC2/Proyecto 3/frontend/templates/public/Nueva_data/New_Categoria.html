@@ -1,0 +1,150 @@
+{% extends "index.html"%}
+{% block title %} Consultar Datos {%endblock%}
+{%block content%}
+
+<style>
+.Block{
+    background-color: transparent;
+    position: absolute;
+    margin-left: 75px;
+    margin-top: 350px;
+    height: 400px;
+    width: 900px;
+    
+    
+}
+.box__register_login{
+    position: absolute;
+    display: block;
+    width: 300px;
+    background-color: #333;
+    padding: 50px;
+    border-radius: 10px;
+    margin-left: 120px ;
+    margin-top: -150px;
+    top: 100px;
+    border: 4px solid white;
+}
+.box__register_instancia{
+    position: absolute;
+    display: block;
+    width: 300px;
+    background-color: #333;
+    padding: 50px;
+    border-radius: 10px;
+    margin-left: 450px ;
+    margin-top: -180px;
+    top: 100px;
+    border: 4px solid white;
+}
+.box__register_recurso{
+    position: absolute;
+    display: block;
+    width: 300px;
+    background-color: #333;
+    padding: 50px;
+    border-radius: 10px;
+    margin-left: 780px ;
+    margin-top: -150px;
+    top: 100px;
+    border: 4px solid white;
+}
+.Entry{
+    padding: 8px;
+    color: white;
+    width: 100%;
+    border: 4px #1f53c5 solid;
+    border-radius: 5px;
+    background-color: #24303c;
+    font-size: 16px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    font-size: 14px;
+}
+.Register_sumit{
+    width: 100%;
+    padding: 10px;
+    background-color: #24303c;
+    border: 4px solid #1f53c5;
+    border-radius: 5px;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.Register_sumit:active{
+    position: relative;
+    top: 1px;
+}
+.box__register h4{
+    margin-left: 12px;
+    color: white;
+}
+.Block_popUp_Cliente{
+    position: absolute;
+    margin-left: 450px;
+    margin-top: 280px;
+  }
+</style>
+
+<div class = "Block">
+    <div class="box__register_login">
+        <form class="box__register" action = "/NewCategoriasend/" method="POST">
+            <h4 id = "Usuario">Registro de Categoria</h4>
+            <input class = "Entry" type="text" name="ID" placeholder="ID">
+            <input class = "Entry"type="text" name="Nombre" placeholder="Nombre">
+            <input class = "Entry"type="text" name="Abreviatura" placeholder="Abreviatura">
+            <input class = "Entry"type="text" name="Carga_Trabajo" placeholder="Carga_Trabajo">
+           
+            <button type="submit" class = "Register_sumit" >Registrar</button>
+        </form>
+    </div>
+    <div class="box__register_instancia">
+        <form class="box__register" action="/NewConfisend/" method = 'post'>
+            <h4 id = "Usuario">Registro de List Configuracion</h4>
+            <input class = "Entry" type="text" name="ID_Categoria" placeholder="ID Categoria">
+            <input class = "Entry"type="text" name="ID" placeholder="ID">
+            <input class = "Entry"type="text" name="Nombre" placeholder="Nombre">
+            <input class = "Entry"type="text" name="Descripcion" placeholder="Descripcion">
+            <button type="submit" class = "Register_sumit" >Registrar</button>
+        </form>
+    </div>
+    <div class="box__register_recurso">
+        <form class="box__register" action="/NewRecusend/" method = 'post'>
+            <h4 id = "Usuario">Registro de List Recursos</h4>
+            <input class = "Entry" type="text" name="ID_Categoria" placeholder="ID_Categoria">
+            <input class = "Entry"type="text" name="ID_list_configuracion" placeholder="ID_list_configuracion">
+            <input class = "Entry"type="text" name="ID" placeholder="ID">
+            <input class = "Entry"type="text" name="Cantidad_recursos" placeholder="Cantidad_recursos">
+            <button type="submit" class = "Register_sumit" >Registrar</button>
+        </form>
+    </div>
+</div>
+{% if MSG == "Categoria Creada correctamente"%}
+<script>
+    alert("Categoria Creada correctamente");
+</script>
+{% endif%}
+{% if MSG == "Config Creada correctamente"%}
+<script>
+    alert("Config Creada correctamente");
+</script>
+{% endif%}
+{% if MSG == "Config recurso Creada correctamente"%}
+<script>
+    alert("Config recurso Creada correctamente");
+</script>
+{% endif%}
+{% if MSG == "No existe esta List de configuracion en categoria en nuestra base de datos"%}
+<script>
+    alert("No existe esta List de configuracion en categoria en nuestra base de datos");
+</script>
+{% endif%}
+{% if MSG == "No existe esta categoria en nuestra base de datos"%}
+<script>
+    alert("No existe esta categoria en nuestra base de datos");
+</script>
+{% endif%}
+
+
+{%endblock%}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="C:\Users\Krpi\Documents\Python\Proyecto_3_IPC2_202000869\frontend\styles\login_and_register.css" >
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Register</title>
+</head>
+<body>
+    <header class="encabezado">
+        
+        <h1>Tecnologías Chapinas S.A</h1>
+       
+    </header>
+    
+    <div class="todo">
+        
+        <div class="box_question_login_register">
+            <div class="box_question_login">
+                <h4 id = "Usuario">¿Ya tiene una Cuenta?</h4>
+                <button class="button_login" onclick="cambio_a_register()"> Login</button>
+            </div>
+            
+            <div class="box_question_register">
+                <h4 id = "Usuario">¿Aun no tienes una Cuenta?</h4>
+                <button class="button_register" onclick="cambio_a_login()"> Register</button>
+            </div>
+        </div>
+        <div class="box__register_login">
+            <form class="box__register">
+                <h4 id = "Usuario">Registro de Usuario</h4>
+                <input class = "Entry" type="text" id="Name_User" placeholder="Name User">
+                <input class = "Entry"type="text" id="Name" placeholder="Name">
+                <input class = "Entry"type="text" id="NIT" placeholder="NIT">
+                <input class = "Entry"type="text" id="Correo" placeholder="Ingrese su correo">
+                <input class = "Entry"type="text" id="Password" placeholder="Ingrese su contraseña">
+                <button type="submit" class = "Register_sumit" >Registrar</button>
+                
+            </form>  
+            <form class="box_login" , action="/login",method = "POST">
+                <h4 id = "Usuario">Iniciar Sesion</h4>
+                <input class = "Entry" type="text" id="Name_User" placeholder="Name User">
+                <input class = "Entry"type="text" id="Password" placeholder="Password">
+                <button type="submit" class = "Register_sumit">Iniciar Sesion</button>
+            </form>
+        </div>
+    
+    </div>
+    <footer class="pie_pagina">
+        <p>© 2022 Derechos reservados Tecnologías Chapinas S.A</p>
+    </footer>
+    <script src="C:\Users\Krpi\Documents\Python\Proyecto_3_IPC2_202000869\frontend\scripts\login_and_register.js"></script>
+</body>
+</html>

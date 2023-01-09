@@ -1,0 +1,55 @@
+{
+    "archivoConfiguraciones": {
+        "listaRecursos": {
+            "recurso": {
+                "-id": "$idRecurso",
+                "nombre": " $nombreRecurso ",
+                "abreviatura": " $abreviaturaRecurso ",
+                "metrica": " $NombreMetrica ",
+                "tipo": " $tipoRecurso ",
+                "valorXhora": " valorNumerico "
+            }
+        },
+        "listaCategorias": {
+            "categoria": {
+                "-id": "$idCateoria",
+                "nombre": " $nombreCategoria ",
+                "descripcion": " $descripcionCategoria ",
+                "cargaTrabajo": " $descripcionCargaTrabajo ",
+                "listaConfiguraciones": {
+                    "configuracion": {
+                        "-id": "$idConfiguracion",
+                        "nombre": " $nombreConfiguracion ",
+                        "descripcion": " $descripcionConfiguracion ",
+                        "recursosConfiguracion": {
+                            "recurso": {
+                                "-id": "$idRecurso",
+                                "cantidadRecurso": " cantidadRecurso "
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "listaClientes": {
+            "cliente": {
+                "-nit": "$nitCliente",
+                "nombre": " $nombreCliente ",
+                "usuario": " $nombreUsuario ",
+                "clave": " $claveUsuario ",
+                "direccion": " $direccionCliente ",
+                "correoElectronico": " $eMailCliente ",
+                "listaInstancias": {
+                    "instancia": {
+                        "-id": "idInstancia",
+                        "idConfiguracion": " $idConfiguracion ",
+                        "nombre": " $nombreInstancia ",
+                        "fechaInicio": " $descripcionFecha ",
+                        "estado": " $estado ",
+                        "fechaFinal": " $descripcionFecha "
+                    }
+                }
+            }
+        }
+    }
+}

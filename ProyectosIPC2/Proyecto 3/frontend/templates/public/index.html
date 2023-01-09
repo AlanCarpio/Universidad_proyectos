@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static%}
+    
+    <link rel="stylesheet" href='{% static "index.css"%}'>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} {%endblock%}</title>
+</head>
+<body >
+    {% load static%}
+    <img src='{% static "images/icon.png"%}' alt="">
+    <header class= "header">
+        <nav class="navega">
+            <ul class="List_principal"> 
+                <li><a>Consultar Datos</a>
+                    <ul class="Sub_consultar">
+                        <li><a href="{%url 'ConsultarClientes'%}">Clientes</a></li>
+                        <li><a href="{%url 'ConsultarCategorias'%}">Categorias</a></li>
+                        <li><a href="{%url 'ConsultarRecursos'%}">Recursos</a></li> 
+                        <li><a href="{%url 'ConsultarConsumos'%}">Consumos</a></li>      
+                    </ul>
+                </li>
+                <li><a>Ingresar Nuevos Datos</a>
+                    <ul class="Sub_consultar">
+                        <li><a href="{%url 'NewCliente'%}">Ingresar Nuevo Cliente</a></li>
+                        <li><a href="{%url 'NewCategoria'%}">Ingresar Nueva Categoria</a></li>
+                        <li><a href="{%url 'NewRecurso'%}">Ingresar Nuevo Resurso</a></li>   
+                    </ul>
+                </li>
+                <li><a href="{%url 'TempleteConfig'%}">Enviar Configuracion</a></li>
+                <li><a href="{%url 'TemplateConsumo'%}">Enviar Consumo</a></li>
+                <li><a href="#">Facturacion</a>
+                    <ul class="Sub_consultar">
+                        <li><a href="{%url 'Facturacion'%}">Generar Facturas</a></li>
+                        <li><a href="{%url 'Facturar'%}">Buscar Factura</a></li>
+                        <li><a href="{%url 'GananciasA'%}">Analisis de Ventas(A)</a></li>
+                        <li><a href="{%url 'GananciasB'%}">Analisis de Ventas(B)</a></li>   
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+    {% block content %}{% endblock %}
+</body>
+</html>

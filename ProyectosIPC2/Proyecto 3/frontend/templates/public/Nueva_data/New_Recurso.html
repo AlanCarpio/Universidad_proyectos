@@ -1,0 +1,97 @@
+{% extends "index.html"%}
+{% block title %} Consultar Datos {%endblock%}
+{%block content%}
+
+<style>
+.Block{
+    background-color: transparent;
+    position: absolute;
+    margin-left: 75px;
+    margin-top: 350px;
+    height: 400px;
+    width: 900px;
+    
+    
+}
+.box__register_login{
+    position: absolute;
+    display: block;
+    width: 300px;
+    background-color: #333;
+    padding: 50px;
+    border-radius: 10px;
+    margin-left: 400px ;
+    margin-top: -150px;
+    top: 100px;
+    border: 4px solid white;
+}
+.box__register_instancia{
+    position: absolute;
+    display: block;
+    width: 300px;
+    background-color: #333;
+    padding: 50px;
+    border-radius: 10px;
+    margin-left: 700px ;
+    margin-top: -200px;
+    top: 100px;
+    border: 4px solid white;
+}
+.Entry{
+    padding: 8px;
+    color: white;
+    width: 100%;
+    border: 4px #1f53c5 solid;
+    border-radius: 5px;
+    background-color: #24303c;
+    font-size: 16px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    font-size: 14px;
+}
+.Register_sumit{
+    width: 100%;
+    padding: 10px;
+    background-color: #24303c;
+    border: 4px solid #1f53c5;
+    border-radius: 5px;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.Register_sumit:active{
+    position: relative;
+    top: 1px;
+}
+.box__register h4{
+    margin-left: 12px;
+    color: white;
+}
+.Block_popUp_Cliente{
+    position: absolute;
+    margin-left: 450px;
+    margin-top: 280px;
+  }
+</style>
+
+<div class = "Block">
+    <div class="box__register_login">
+        <form class="box__register" action = "/NewRecursosend/" method="POST">
+            <h4 id = "Usuario">Registro de Recurso</h4>
+            <input class = "Entry" type="text" name="ID" placeholder="ID">
+            <input class = "Entry"type="text" name="Nombre" placeholder="Nombre">
+            <input class = "Entry"type="text" name="Abreviatura" placeholder="Abreviatura">
+            <input class = "Entry"type="text" name="Metrica" placeholder="Metrica">
+            <input class = "Entry"type="text" name="Tipo" placeholder="Tipo">
+            <input class = "Entry"type="text" name="valorxHora" placeholder="valorxHora">
+            <button type="submit" class = "Register_sumit" >Registrar</button>
+        </form>
+    </div>
+
+{% if MSG == "Recurso Creado Exitosamente"%}
+<script>
+    alert("Recurso Creado Exitosamente");
+</script>
+{%endif%}
+{%endblock%}

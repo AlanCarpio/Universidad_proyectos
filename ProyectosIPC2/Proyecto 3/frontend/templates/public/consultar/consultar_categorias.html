@@ -1,0 +1,115 @@
+{% extends "index.html"%}
+{% block title %} Consultar Datos {%endblock%}
+{%block content%}
+<style>
+.Block{
+    background-color: transparent;
+    position: absolute;
+    margin-left: 250px;
+    margin-top: 350px;
+    height: 400px;
+    width: 800px;
+    overflow: auto;
+   
+}
+
+.Table{
+  font-family: calibri;
+  border-collapse: collapse;
+  border: solid 2px black;
+  width: 100%;
+  
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  background-color: #dddddd;
+
+}
+.Principal{
+    font-family: calibri, sans-serif;
+    background-color: black;
+    color: white;
+}
+.Principal > th{
+    font-family: calibri, sans-serif;
+    background-color: black;
+    color: white;
+}
+.Usuarios> th{
+    font-family: calibri, sans-serif;
+    background-color:rgb(51,51,51);
+    color: white;
+}
+.Instancias > th{
+    font-family: calibri, sans-serif;
+    background-color: rgb(159,159,159);
+    color: black;
+}
+.recursos > th{
+    font-family: calibri, sans-serif;
+    background-color: rgb(219,249,250);
+    color: black;
+}
+.Instancias_th > th{
+    font-family: calibri, sans-serif;
+    background-color: rgb(159,159,159);
+    color: black;
+}
+.recursos_th > th{
+    font-family: calibri, sans-serif;
+    background-color: rgb(219,249,250);
+    color: black;
+}
+</style>
+<div class = "Block">
+ <table class="Table">
+    <tr class="Principal">
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Abreviatura</th>
+        <th>CargaTrabajo</th>
+    </tr>
+    {%for iter_categoria in Consulta_Categoria%}
+    <tr class="Usuarios">
+        <th>{{iter_categoria.ID}}</th>
+        <th>{{iter_categoria.Nombre}}</th>
+        <th>{{iter_categoria.Abreviatura}}</th>
+        <th>{{iter_categoria.CargaTrabajo}}</th>
+        <tr class="Instancias">
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Descripcion</th>
+            <th></th>
+        </tr>
+        {%for iter_configuracion in iter_categoria.lista_configuracion%}
+            <tr class="Instancias_th">
+                <th>{{iter_configuracion.ID}}</th>
+                <th>{{iter_configuracion.Nombre}}</th>
+                <th>{{iter_configuracion.Descripcion}}</th>
+                <th></th>
+                <tr class="recursos">
+                    <th>ID</th>
+                    <th>Cantidad_recursos</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                {%for iter_recursos in iter_configuracion.lista_recursos%}
+                    <tr class="recursos_th">
+                        <th>{{iter_recursos.ID}}</th>
+                        <th>{{iter_recursos.Cantidad_recursos}}</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                {%endfor%}
+
+            </tr>
+            
+        {%endfor%}
+    </tr>
+    {%endfor%}
+ </table>
+</div>
+{%endblock%}

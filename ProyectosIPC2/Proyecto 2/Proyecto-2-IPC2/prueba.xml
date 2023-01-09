@@ -1,0 +1,49 @@
+<?xml version="1.1"?> 
+<listadoInicial>
+    <configInicial id="01" idEmpresa="0150" idPunto="01">
+        <escritoriosActivos>
+            <escritorio idEscritorio="57"/> 
+            <escritorio idEscritorio="58"/>
+        </escritoriosActivos>
+        <escritoriosActivos>
+            <escritorio idEscritorio="70"/> 
+            <escritorio idEscritorio="80"/>
+        </escritoriosActivos>
+        <listadoClientes> 
+            <cliente dpi="3008640430101">
+                <listadoTransacciones> 
+                    <transaccion idTransaccion="0" cantidad="cantTrans"/> 
+                    <transaccion idTransaccion="1" cantidad="cantTrans"/>
+                </listadoTransacciones> 
+            </cliente>
+            <cliente dpi="3008640430101">
+                <listadoTransacciones> 
+                    <transaccion idTransaccion="1" cantidad="cantTrans"/> 
+                </listadoTransacciones>     
+            </cliente>
+            <cliente dpi="3008640430101">
+                <listadoTransacciones> 
+                    <transaccion idTransaccion="0" cantidad="cantTrans"/> 
+                    <transaccion idTransaccion="1" cantidad="cantTrans"/>
+                </listadoTransacciones> 
+            </cliente>
+            <cliente dpi="3008640430101">
+                <listadoTransacciones> 
+                    <transaccion idTransaccion="1" cantidad="cantTrans"/> 
+                </listadoTransacciones>     
+            </cliente>
+            <cliente dpi="3008640430101">
+                <listadoTransacciones> 
+                    <transaccion idTransaccion="0" cantidad="cantTrans"/> 
+                    <transaccion idTransaccion="1" cantidad="cantTrans"/>
+                </listadoTransacciones> 
+            </cliente>
+            <cliente dpi="3008640430101">
+                <listadoTransacciones> 
+                    <transaccion idTransaccion="1" cantidad="cantTrans"/> 
+                </listadoTransacciones>     
+            </cliente>
+        </listadoClientes> 
+    </configInicial>
+    
+</listadoInicial> 

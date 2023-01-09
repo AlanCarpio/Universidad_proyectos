@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<listaEmpresas>
+<empresa id="0150">
+    <nombre> Sony Entermeint </nombre>
+    <abreviatura> Sony </abreviatura>
+    <listaPuntosAtencion>
+        <puntoAtencion id="01">
+            <nombre> puntoAtencion_A </nombre> 
+            <direccion> puntoAtencion_A </direccion>
+            <listaEscritorios>
+                <escritorio id="57">
+                <identificacion> 1 </identificacion> 
+                <encargado> Alan </encargado> 
+                </escritorio>
+                <escritorio id="58">
+                <identificacion> 2 </identificacion> 
+                <encargado> mizael </encargado> 
+                </escritorio>
+                <escritorio id="59">
+                <identificacion> 2 </identificacion> 
+                <encargado> mizael </encargado> 
+                </escritorio>
+            </listaEscritorios>       
+        </puntoAtencion>
+        <puntoAtencion id="02">
+            <nombre> puntoAtencion_B </nombre> 
+            <direccion> puntoAtencion_B </direccion>
+            <listaEscritorios>
+                <escritorio id="59">
+                <identificacion> C </identificacion> 
+                <encargado> D </encargado> 
+                </escritorio>
+                <escritorio id="60">
+                <identificacion> C </identificacion> 
+                <encargado> D </encargado> 
+                </escritorio>
+            </listaEscritorios>       
+        </puntoAtencion>
+    </listaPuntosAtencion> 
+    <listaTransacciones>
+        <transaccion id="0">
+            <nombre> Panes </nombre>
+            <tiempoAtencion> 10 </tiempoAtencion>
+        </transaccion>
+        <transaccion id="1">
+            <nombre> Panes </nombre>
+            <tiempoAtencion> 5 </tiempoAtencion>
+        </transaccion>
+    </listaTransacciones>
+</empresa>
+<empresa id="0151">
+    <nombre> Sony Entermeint </nombre>
+    <abreviatura> Sony </abreviatura>
+    <listaPuntosAtencion>
+        <puntoAtencion id="01">
+            <nombre> puntoAtencion_A </nombre> 
+            <direccion> puntoAtencion_A </direccion>
+            <listaEscritorios>
+                <escritorio id="59">
+                <identificacion> 1 </identificacion> 
+                <encargado> Alan </encargado> 
+                </escritorio>
+                <escritorio id="60">
+                <identificacion> 2 </identificacion> 
+                <encargado> mizael </encargado> 
+                </escritorio>
+            </listaEscritorios>       
+        </puntoAtencion>
+        <puntoAtencion id="02">
+            <nombre> puntoAtencion_B </nombre> 
+            <direccion> puntoAtencion_B </direccion>
+            <listaEscritorios>
+                <escritorio id="59">
+                <identificacion> C </identificacion> 
+                <encargado> D </encargado> 
+                </escritorio>
+                <escritorio id="60">
+                <identificacion> C </identificacion> 
+                <encargado> D </encargado> 
+                </escritorio>
+            </listaEscritorios>       
+        </puntoAtencion>
+    </listaPuntosAtencion> 
+    <listaTransacciones>
+        <transaccion id="$codigoTransaccion">
+            <nombre> $nombreTransaccion </nombre>
+            <tiempoAtencion> minutosAtencion </tiempoAtencion>
+        </transaccion>
+    </listaTransacciones>
+</empresa>
+</listaEmpresas>

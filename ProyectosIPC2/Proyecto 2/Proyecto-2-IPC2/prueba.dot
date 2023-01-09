@@ -1,0 +1,45 @@
+graph  grafi{
+    rankdir=TB;
+    labelloc="t";
+    label="Proyecto 2";
+    node[shape="circle"
+    fixedsize=true
+    width=0.8
+    height=0.8
+    ];
+    subgraph cluster_1 {
+        node [style=filled shape="circle"];
+        style="filled";
+        color="chocolate1";
+        label="Escritorios";
+        # =============== Escritorios ===============
+        subgraph cluster_4 {
+        node [style=filled shape="circle" rankdir="TB"];
+        style="filled";
+        color="honeydew4";
+        label="0";
+        Denis [fillcolor = green]
+        Denis -- paciente3    
+        }
+    }
+    # =============== Clientes ===============
+    subgraph cluster_5 {
+        node [style=filled shape="circle"];
+        style="filled";
+        color="chocolate1";
+        label="Pacientes en Espera";
+        paciente4 paciente5 paciente6 
+        
+        
+        
+        }
+        #============ Tiempo Promedio ============
+        subgraph cluster_6 {
+        node [style=filled shape="circle"];
+        style="filled";
+        color="chocolate1";
+        label="Tiempo Promedio de Espera";
+        0
+        }
+    
+}

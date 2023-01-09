@@ -1,0 +1,185 @@
+
+            #contenedor1{
+                        font-size: 12px;
+            
+                        width :800px;
+                        height :500px;
+                        background-color:rgb(0,104,241);
+                        position: absolute;
+                        left: 50px; 
+                        top: 100px;
+                        
+            }
+            
+            #contenedor2{
+                        font-size: 12px;
+            
+                        width :400px;
+                        height :350px;
+                        background-color:rgb(0,213,241);
+                        position: absolute;
+                        left: 50px; 
+                        top: 100px;
+                        
+            }
+            
+            #contenedor3{
+                        font-size: 12px;
+            
+                        width :250px;
+                        height :350px;
+                        background-color:rgb(241,0,221);
+                        position: absolute;
+                        left: 500px; 
+                        top: 100px;
+                        
+            }
+            
+            #contenedor4{
+                        font-size: 12px;
+            
+                        position: absolute;
+                        left: 50px; 
+                        top: 50px;
+                        
+            }
+            
+            #contenedor5{
+                        font-size: 12px;
+            
+                        position: absolute;
+                        left: 50px; 
+                        top: 125px;
+                        
+            }
+            
+            #etiqueta1{
+                        font-size: 12px;
+            
+                        width :200px;
+                        height :10px;
+                        color: rgb(17,0,255);
+                        position: absolute;
+                        left: 50px; 
+                        top: 25px;
+                        
+            }
+            
+            #etiqueta2{
+                        font-size: 12px;
+            
+                        width :200px;
+                        height :10px;
+                        color: rgb(17,0,255);
+                        position: absolute;
+                        left: 50px; 
+                        top: 100px;
+                        
+            }
+            
+            #etiqueta3{
+                        font-size: 12px;
+            
+                        width :200px;
+                        height :10px;
+                        color: rgb(17,0,255);
+                        position: absolute;
+                        left: 50px; 
+                        top: 175px;
+                        
+            }
+            
+            #etiqueta4{
+                        font-size: 12px;
+            
+                        width :200px;
+                        height :10px;
+                        color: rgb(17,0,255);
+                        position: absolute;
+                        left: 50px; 
+                        top: 25px;
+                        
+            }
+            
+            #etiqueta5{
+                        font-size: 12px;
+            
+                        width :200px;
+                        height :10px;
+                        color: rgb(17,0,255);
+                        position: absolute;
+                        left: 50px; 
+                        top: 100px;
+                        
+            }
+            
+            #texto1{
+                        font-size: 12px;
+            
+                        position: absolute;
+                        left: 50px; 
+                        top: 50px;
+                        
+            }
+            
+            #texto2{
+                        font-size: 12px;
+            
+                        position: absolute;
+                        left: 50px; 
+                        top: 125px;
+                        
+            }
+            
+            #clave1{
+                        font-size: 12px;
+            
+                        position: absolute;
+                        left: 50px; 
+                        top: 200px;
+                        
+            }
+            
+            #radio1{
+                        font-size: 12px;
+            
+            }
+            
+            #radio2{
+                        font-size: 12px;
+            
+            }
+            
+            #radio3{
+                        font-size: 12px;
+            
+            }
+            
+            #checkbox1{
+                        font-size: 12px;
+            
+            }
+            
+            #checkbox2{
+                        font-size: 12px;
+            
+            }
+            
+            #areatexto1{
+                        font-size: 12px;
+            
+                        position: absolute;
+                        left: 50px; 
+                        top: 175px;
+                        
+            }
+            
+            #boton1{
+                        font-size: 12px;
+            
+                        position: absolute;
+                        left: 400px; 
+                        top: 25px;
+                        
+            }
+            
